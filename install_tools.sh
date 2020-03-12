@@ -1,6 +1,8 @@
 ARCH=$(dpkg --print-architecture)
 #ARCH=amd64
 
+sudo apt install -y binwalk foremost pngcheck gem basez
+:<<EOF
 if [ $(command -v binwalk) ];then
     echo "binwalk已安装"
 else
@@ -13,6 +15,7 @@ else
     echo "gem未安装，准备安装……"
     sudo apt install -y gem
 fi
+EOF
 if [ $(command -v zsteg) ];then
     echo "zsteg已安装"
 else
