@@ -1,7 +1,8 @@
 ARCH=$(dpkg --print-architecture)
 #ARCH=amd64
 
-sudo apt install -y binwalk foremost pngcheck gem basez
+sudo apt install -y binwalk foremost pngcheck gem basez tesseract-ocr
+pip3 install zxing
 :<<EOF
 if [ $(command -v binwalk) ];then
     echo "binwalk已安装"
