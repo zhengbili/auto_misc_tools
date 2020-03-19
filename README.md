@@ -13,6 +13,8 @@
 
 ## 使用方法
 
+`./install_tools.sh`安装环境
+
 * `./solve_misc.sh $FILE`分析misc题目
 * `./solve_image.sh $FILE`分析misc图片
 * `./solve_achieve.sh $FILE`分析misc压缩包
